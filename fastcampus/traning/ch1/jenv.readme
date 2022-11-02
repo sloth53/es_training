@@ -1,0 +1,41 @@
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew install jenv
+$ brew tap AdoptOpenJDK/openjdk
+
+# Shell: bash
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+
+$ source ~/.bash_profile
+
+# Shell: zsh
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+
+$ source ~/.zshrc
+
+jdk version 별 설치 하기)
+$ brew install --cask adoptopenjdk8
+$ brew install --cask adoptopenjdk11
+$ brew install --cask adoptopenjdk15
+$ brew install --cask adoptopenjdk16
+
+jenv 추가)
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
+
+$ jenv enable-plugin export
+
+jenv global 설정)
+/Users/henryjeong/.jenv/version
+
+$ jenv global 11.0 - elasticsearch 최신 버전에서는 jdk 11 을 요구 합니다.
+$ jenv global
+
+jenv local 설정) - elasticsearch build 에 사용하기 때문에 github/elastic/elasticsearch 위치에서 설정 합니다.
+$ jenv local 16
+$ jenv local
+$ java -version
+

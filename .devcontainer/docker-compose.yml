@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  ubuntu-windows:
+    image: ubuntu:20.04
+    container_name: ubuntu-windows
+    stdin_open: true
+    tty: true
+    command: [/bin/bash]
+    ports:
+      - 9200:9200
+      - 9300:9300
+      - 5601:5601
+    expose:
+      - 9200
+      - 9300
+      - 5601
+#    networks:
+#      - ubuntu-windows-bridge
+
+#networks:
+#  ubuntu-windows-bridge:
+#    driver: bridge

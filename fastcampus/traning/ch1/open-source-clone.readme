@@ -1,0 +1,10 @@
+Open Source Clone 하기
+
+Lucene / Elasticsearch / elasticsearch-analysis-arirang / arirang-analyzer-6 / arirang.morph
+
+$ git clone https://github.com/apache/lucene.git
+$ git clone https://github.com/elastic/elasticsearch.git
+$ git clone https://github.com/HowookJeong/elasticsearch-analysis-arirang.git
+$ git clone https://github.com/HowookJeong/arirang-analyzer-6.git
+$ git clone https://github.com/HowookJeong/arirang.morph.git
+
